@@ -6,7 +6,7 @@
 }
 body{
     background-image:url('https://airbus-h.assetsadobe2.com/is/image/content/dam/corporate-topics/innovation/Innovation-future-technology-advanced-analytics.jpg?wid=1920&fit=fit,1&qlt=85,0');
-    background-size: auto 100vh;
+    background-size: flex 100vh;
     color: whitesmoke;
     font-family: 'Kalam', cursive;
     font-size: 12px;
@@ -66,6 +66,12 @@ body{
     display:block;  
     font-family: 'Squada One', cursive;
     padding:20px 30px;
+    transition: background-color 5s, color 2s;
+  }
+
+  .menu a:hover{
+   background-color: rgba(203, 173, 218, 0.363);
+   color: white;
   }
 
   .menu ul{
@@ -93,6 +99,7 @@ body{
     line-height: 1.2em;
   }
 
+  .contact h2,
   .myjourney h2 {
     font-family: 'Audiowide', cursive;
     font-size: 2em;
@@ -101,9 +108,10 @@ body{
     }
   
   .myjourney {
-    background-color: rgb(210, 147, 235);
+    background-image: url('https://wallpaperaccess.com/full/1089679.png');
+    background-size: flex 100vh;
     padding: 2em;
-    height:100vh;
+    min-height:100vh;
   }
 
   .myjourney figure{
@@ -135,5 +143,25 @@ body{
   .img-portfolio{
     height: 240px;
     width:240px;
-    border-radius: 11px;
+  } 
+
+ .contact{
+    background-color: rgb(210, 147, 235);
+    min-height:100vh;
+    padding: 2em;
+    text-align: center;
   }
+
+  .contact a{
+    color: rgb(143, 19, 112);
+    font-size: 5em;
+  }
+
+  .contact a:hover{
+    text-decoration: none;
+    text-shadow: 0px 0px 20px rgba(255,255,255,1);
+  }
+
+ .gridicons{
+  grid-template-columns: 100px 100px 100px 100px;
+ }
